@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taman Purbakala Kerajaan Sriwijaya</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+                <h2>TPKS</h2>
+                <span>Taman Purbakala Kerajaan Sriwijaya</span>
+            </a>
+
+          <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#konsep">Konsep Desain</a></li>
+    <li><a href="#perancangan">Tentang Perancangan</a></li>
+    <li><a href="#maket">Foto Maket</a></li>
+    <li><a href="#media">Media</a></li>
+    <li><a href="#lokasi">Lokasi</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+</ul>
+
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h4>SELAMAT DATANG DI</h4>
+
+            <h1>
+                PERANCANGAN KOMUNIKASI VISUAL <br>
+                GRAFIS LINGKUNGAN DESTINASI WISATA 
+                TAMAN PURBAKALA SUMATERA SELATAN
+            </h1>
+
+            <p>
+                Media Informasi Digital Berbasis Environmental Graphic 
+                Design untuk meningkatkan navigasi, identitas visual,
+                dan pengalaman edukatif pengunjung. 
+            </p>
+
+           <a href="#konsep" class="btn">Jelajahi Lebih Lanjut</a>
+        </div>
+
+    </section>
+
+<section id="konsep">
+
+    <div class="container">
+
+        <div class="text">
+
+            <h2>KONSEP DESAIN</h2>
+
+            <p>
+              Gaya tampilan yang digunakan dalam perancangan grafis lingkungan 
+              Taman Purbakala Kerajaan Sriwijaya adalah gaya geometric. 
+              Gaya ini dipilih untuk menyederhanakan elemen-elemen visual yang kompleks, 
+              seperti aksara Pallawa dan artefak sejarah, menjadi bentuk yang lebih sederhana, 
+              terstruktur, dan mudah dipahami. Melalui penggunaan bentuk-bentuk geometris dasar,
+              gaya ini mampu menghadirkan tampilan yang modern tanpa menghilangkan nilai historis 
+              dan identitas budaya yang terkandung di dalamnya.
+            </p>
+
+        </div>
+
+        <div class="image-grid">
+
+            <img src="logo.png" alt="logo">
+
+            <img src="grapich.png" alt="grapich">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="perancangan">
+
+    <div class="container">
+
+        <div class="text-full">
+
+            <h2>TENTANG PERANCANGAN</h2>
+
+            <p>
+                Perancangan ini merupakan karya Tugas Akhir 
+                Program Studi Desain Komunikasi Visual yang 
+                bertujuan mengembangkan sistem Environmental Graphic Design (EGD) 
+                di kawasan Taman Purbakala Sumatera Selatan. Perancangan menghadirkan 
+                sistem grafis lingkungan yang terdiri atas directional sign, identification sign, 
+                informational sign, orientation map, serta media informasi digital berbasis website 
+                yang terintegrasi melalui QR Code. Dengan pendekatan tersebut, pengunjung dapat memperoleh 
+                informasi sejarah dan navigasi kawasan secara lebih mudah, informatif, dan menarik.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="maket">
+
+    <h2>FOTO MAKET</h2>
+
+    <p class="gallery-text">
+        Dokumentasi hasil pembuatan maket perancangan.
+    </p>
+
+    <div class="gallery">
+
+        <img src="maket1.jpg" onclick="openModal(0)">
+        <img src="maket2.jpg" onclick="openModal(1)">
+        <img src="maket3.jpg" onclick="openModal(2)">
+        <img src="maket4.jpg" onclick="openModal(3)">
+
+    </div>
+
+</section>
+
+    <!-- ================= MEDIA INFORMASI DIGITAL ================= -->
+
+   <section id="media">
+
+    <h2>MEDIA INFORMASI DIGITAL</h2>
+
+    <p class="gallery-text">
+        Berikut beberapa media informasi digital.
+    </p>
+
+    <div class="slider">
+
+        <button class="prev-btn">&#10094;</button>
+
+        <div class="slider-container">
+
+            <div class="slider-track">
+
+                <img src="pictogram.png" onclick="openModal(0)">
+                <img src="denah.png" onclick="openModal(1)">
+                <img src="larangan.png" onclick="openModal(2)">
+                <img src="logo.png" onclick="openModal(3)">
+                <img src="grapich.png" onclick="openModal(4)">
+
+            </div>
+
+        </div>
+
+        <button class="next-btn">&#10095;</button>
+
+    </div>
+
+</section>
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <img id="modalImg">
+
+        <div class="modal-text">
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDesc"></p>
+
+        </div>
+
+        <div class="modal-button">
+
+            <button onclick="changeSlide(-1)">❮ Sebelumnya</button>
+
+            <button onclick="changeSlide(1)">Selanjutnya ❯</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- ================= LOKASI & KONTAK ================= -->
+
+    <section id="lokasi-kontak" class="lokasi-kontak">
+
+        <div class="lokasi-box">
+
+            <h2 id="lokasi">📍 Lokasi</h2>
+
+            <p>Jl. Syakyakirti, Karang Anyar, Gandus, Palembang.</p>
+
+            <iframe
+                src="https://www.google.com/maps?q=Taman+Purbakala+Kerajaan+Sriwijaya&output=embed"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+        <div class="kontak-box">
+
+            <h2 id="kontak">📧 Kontak Kami</h2>
+
+            <div class="item">
+                <h4>Email</h4>
+                <p>info@tpks.com</p>
+            </div>
+
+            <div class="item">
+                <h4>Instagram</h4>
+                <p>@tpks</p>
+            </div>
+
+            <div class="item">
+                <h4>Alamat</h4>
+                <p>Palembang, Sumatera Selatan</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Taman Purbakala Kerajaan Sriwijaya</h3>
+
+        <p>© 2026 Semua Hak Cipta Dilindungi.</p>
+
+    </footer>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
